@@ -23,8 +23,8 @@ section {
 
 .hero-about {
     max-width: 100%;
-    min-height: 650px;  
-    background-image: url(./assets/images/about-me.JPG);
+    min-height: 650px; 
+    background-image: url(../images/about-me.JPG); 
     background-repeat:no-repeat;
     background-size:contain;
     margin-bottom: 250px;
@@ -35,7 +35,7 @@ section {
 .hero-contact {
     width: 100%;
     min-height: 650px;
-    background-image: url(./assets/images/contact-me2.JPG);
+    background-image: url(../images/contact-me2.JPG);
     background-repeat:no-repeat;
     background-size:contain;
     margin-bottom: 250px;
@@ -44,7 +44,7 @@ section {
 .hero-work {
     width: 100%;
     min-height: 800px;
-    background-image: url(./assets/images/work.jpg);
+    background-image: url(../images/work.jpg);
     text-align: center;
     background-repeat:no-repeat;
     background-size:contain;
