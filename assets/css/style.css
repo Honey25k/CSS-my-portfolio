@@ -2,9 +2,16 @@
     box-sizing: border-box;
   }
 
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 .img {
-    width: 230px;
+    max-width: 230px;
     height: auto; 
+    background-repeat:no-repeat;
+    background-size:contain;
 }
 
 .img-first-project {
@@ -20,8 +27,8 @@
     background-image: url(/assets/images/about-me.jpg);
     background-repeat:no-repeat;
     background-size:contain;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    margin-bottom: 250px;
+    
     
 }
 
@@ -31,9 +38,7 @@
     background-image: url(/assets/images/contact-me2.jpg);
     background-repeat:no-repeat;
     background-size:contain;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    
+    margin-bottom: 250px;
 }
 
 .hero-work {
@@ -43,9 +48,7 @@
     text-align: center;
     background-repeat:no-repeat;
     background-size:contain;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-   
+    
 }
 
 header{
@@ -89,14 +92,13 @@ ul a:hover{
   }
 
 .flex-container {
-    display: flex;
+    display: inline-flex;
     background-color: #c59db9;
     align-items: flex-end;
-    flex-direction: row;
+    flex-direction: unset;
     background-repeat:no-repeat;
     background-size:contain;
-
-   
+    width: 100%;
 }
  
 .flex-container div {
@@ -105,6 +107,7 @@ ul a:hover{
     padding: 10px;
     flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .flexbox-item {
@@ -119,15 +122,19 @@ ul a:hover{
     background-blend-mode: soft-light;
     background-repeat:no-repeat;
     background-size:contain;
-    flex-direction: row;
   }
 
+.flexbox-item:first-child {
+    min-height: 400px;
+    flex-basis: 400px;
+}
+
 .footer {
-    grid-area: footer;
     background-color: white;
     text-align: center;
     margin-bottom: 10px;
-    margin-top: 0px
+    margin-top: 100px
+
 }
 
 a{
@@ -145,6 +152,7 @@ li {
     margin-bottom: 7px;
 }
 
+/* For Desktop View */
 @media screen and (max-width: 980px) {
     header {
         padding: 0 0 10px 0;
@@ -161,18 +169,22 @@ li {
       }
 }
 
+/* For Tablet View */
 @media screen and (max-width: 768px) {
     .flexbox-item,
     .flex-container,
-    .flex-container > div {
+    .flex-container > div,
+    .flexbox-item:first-child {
         flex-basis: 100%;
+        min-height: 100%;
         flex-direction: column;
     }
 
     .flexbox-item,
     .flex-container,
-    .flex-container > div {
-        min-height: 150px;
+    .flex-container > div
+    .flexbox-item:first-child {
+        min-height: 10%;
         flex-direction: column;
       }
 
