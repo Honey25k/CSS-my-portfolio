@@ -24,7 +24,7 @@ section {
 .hero-about {
     max-width: 100%;
     min-height: 650px; 
-    background-image: url(../images/about-me.jpg); 
+    background-image: url(../images/about.jpg); 
     background-repeat:no-repeat;
     background-size:contain;
     margin-bottom: 250px;
@@ -33,7 +33,7 @@ section {
 .hero-contact {
     width: 100%;
     min-height: 650px;
-    background-image: url(../images/contact-me2.jpg);
+    background-image: url(../images/contact.jpg);
     background-repeat:no-repeat;
     background-size:contain;
     margin-bottom: 250px;
