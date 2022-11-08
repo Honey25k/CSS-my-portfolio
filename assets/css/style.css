@@ -10,38 +10,42 @@
 .img-first-project {
     max-width: 100%;
     height: auto; 
-}
-
-.hero {
-    max-width: 100%;
-    max-height: 500px;
-    background-image: url(/assets/images/banner-pic.jpg);
-    
+    background-repeat:no-repeat;
+    background-size:contain;
 }
 
 .hero-about {
     max-width: 100%;
-    min-width: 50vh;
-    min-height:50vh;
+    min-height: 650px;  
     background-image: url(/assets/images/about-me.jpg);
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-size:contain;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     
 }
 
 .hero-contact {
     width: 100%;
-    height: 500px;
+    min-height: 650px;
     background-image: url(/assets/images/contact-me2.jpg);
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-size:contain;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
 }
 
 .hero-work {
     width: 100%;
-    height: 500px;
+    min-height: 800px;
     background-image: url(/assets/images/work.jpg);
-    background-size: cover;
-    background-position: left;
-    text-align: center ;
+    text-align: center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+   
 }
 
 header{
@@ -88,6 +92,10 @@ ul a:hover{
     display: flex;
     background-color: #c59db9;
     align-items: flex-end;
+    flex-direction: row;
+    background-repeat:no-repeat;
+    background-size:contain;
+
    
 }
  
@@ -95,6 +103,8 @@ ul a:hover{
     background-color: #b87dae;
     margin: 10px;
     padding: 10px;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .flexbox-item {
@@ -107,6 +117,9 @@ ul a:hover{
     padding: 0 0 20px 0;
     margin: 0.5em;
     background-blend-mode: soft-light;
+    background-repeat:no-repeat;
+    background-size:contain;
+    flex-direction: row;
   }
 
 .footer {
@@ -153,12 +166,14 @@ li {
     .flex-container,
     .flex-container > div {
         flex-basis: 100%;
+        flex-direction: column;
     }
 
     .flexbox-item,
     .flex-container,
     .flex-container > div {
         min-height: 150px;
+        flex-direction: column;
       }
 
     .hero,
