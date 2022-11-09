@@ -21,6 +21,7 @@ section {
     background-size:contain;
 }
 
+/* Hero banner for different sections begining */
 .hero-about {
     max-width: 100%;
     min-height: 650px; 
@@ -47,6 +48,7 @@ section {
     background-repeat:no-repeat;
     background-size:contain;
 }
+/* Hero banner for different sections end */
 
 header{
     font-family: Arial, Helvetica, sans-serif;
@@ -58,6 +60,7 @@ header{
     font-size: 30px;
 }
 
+/* the navbar styling begining*/
 .nav-list{
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
@@ -81,6 +84,8 @@ ul a:hover{
     display: inline; 
     padding: 10px;
 }
+/* navbar styling end*/
+
 
 .page-section > div {
     flex: auto;
@@ -120,6 +125,7 @@ ul a:hover{
     background-size:contain;
   }
 
+  /* only for the first flexbox item so its shown bigger */
 .flexbox-item:first-child {
     min-height: 400px;
     flex-basis: 400px;
